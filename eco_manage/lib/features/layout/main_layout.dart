@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
+import 'appBar.dart';
 import '../../app/theme/colors.dart';
 
 class MainLayout extends StatelessWidget {
@@ -12,11 +13,31 @@ class MainLayout extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.primary,
       body: SafeArea(
-        child: Column(
+        bottom: false, // Permitir que el Layout llegue hasta el fondo
+        child: Stack(
           children: [
-            const Header(),
-            Expanded(
-              child: child, // El contenido de la pantalla se renderiza aquí
+            // Contenido Principal
+            Column(
+              children: [
+                const Header(),
+                Expanded(child: child),
+                // Espacio para evitar que la barra tape el contenido
+                const SizedBox(height: 80),
+              ],
+            ),
+
+            // Barra de Navegación Inferior (Sticky)
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: EcoBottomBar(
+                currentIndex:
+                    0, // Esto debería manejarse con un estado (Riverpod/Provider)
+                onTap: (index) {
+                  // Lógica de navegación
+                },
+              ),
             ),
           ],
         ),
