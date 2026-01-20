@@ -1,6 +1,8 @@
 import 'package:eco_manage/features/home/presentation/widgets/card_presupuesto_circle.dart';
 import 'package:flutter/material.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 
+import '../../../layout/card_no_activity.dart';
 import '../widgets/card_home_consejos.dart';
 import '../widgets/card_plan_ahorro.dart';
 
@@ -15,15 +17,12 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // CardHomeConsejos(
-            //   badgeText: 'Consejos',
-            //   title: 'Consejos',
-            //   description: 'Consejos',
-            //   buttonText: 'Consejos',
-            //   onButtonPressed: () {},
-            //   imagePath: 'assets/images/consejos.png',
-            // ),
-            // const SizedBox(height: 16),
+            CardNoActivity(
+              icon: LucideIcons.calendar,
+              title: 'No hay actividades recientes',
+              description: 'Comienza creando tu primera tarea o tu primer plan de ahorro :b',
+            ),
+            const SizedBox(height: 16),
             // Ejemplo de cards de presupuesto
             Row(
               children: [

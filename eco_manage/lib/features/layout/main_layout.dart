@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
-import 'appBar.dart';
+import 'app_bar.dart';
 import '../../app/theme/colors.dart';
 
 class MainLayout extends StatelessWidget {
