@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 import 'router/app_router.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     final GoRouter router = appRouter;
 
-    return MaterialApp.router(
+    return ShadApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: router,
     );
