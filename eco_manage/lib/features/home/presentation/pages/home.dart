@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../../../layout/card_no_activity.dart';
-import '../widgets/card_home_consejos.dart';
+// import '../widgets/card_home_consejos.dart';
 import '../widgets/card_plan_ahorro.dart';
 
 class Home extends StatelessWidget {
