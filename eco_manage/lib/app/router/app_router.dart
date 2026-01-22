@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import '../../features/finance/presentation/pages/budgets/budget.dart';
 import '../../features/finance/presentation/pages/budgets/budget_create.dart';
 import '../../features/finance/presentation/pages/finance.dart';
 import '../../features/home/presentation/pages/home.dart';
@@ -22,6 +23,10 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'finance',
               builder: (_, __) => const Finance(),
+            ),
+            GoRoute(
+              path: 'finance/budgets',
+              builder: (_, __) => const Budget()
             ),
             GoRoute(
               path: 'finance/budgets/create',

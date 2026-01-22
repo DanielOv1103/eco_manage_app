@@ -27,7 +27,7 @@ class Finance extends StatelessWidget {
               icon: LucideIcons.plus,
               title: 'Crea tu primer presupuesto',
               description: 'Comienza creando tu primer presupuesto',
-              onTapRoute: '/finance/budgets/create',
+              onTapRoute: '/finance/budgets',
             ),
             const SizedBox(height: 16),
 

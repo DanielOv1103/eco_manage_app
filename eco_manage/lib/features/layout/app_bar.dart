@@ -33,7 +33,7 @@ class EcoBottomBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _buildNavItem(0, LucideIcons.house, 'Inicio'),
-              _buildNavItem(1, LucideIcons.piggyBank, 'Ahorro'),
+              _buildNavItem(1, LucideIcons.wallet, 'Ahorro'),
               _buildNavItem(2, LucideIcons.calendarRange, 'Calendario'),
               _buildNavItem(3, LucideIcons.chartColumnIncreasing, 'Gráficos'),
               _buildNavItem(4, LucideIcons.userRoundCog, 'Perfil'),
